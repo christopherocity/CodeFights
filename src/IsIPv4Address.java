@@ -1,4 +1,4 @@
-public class isIPv4Address {
+public class IsIPv4Address {
     boolean isIPv4Address(String inputString) {
         if (inputString.charAt(0) == '.')
             return false;

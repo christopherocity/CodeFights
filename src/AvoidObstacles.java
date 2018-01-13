@@ -1,4 +1,4 @@
-public class avoidObstacles {
+public class AvoidObstacles {
     int avoidObstacles(int[] inputArray) {
 
         int[] numberLine = new int[40];

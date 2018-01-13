@@ -1,4 +1,4 @@
-public class arrayMaximalAdjacentDifference {
+public class ArrayMaximalAdjacentDifference {
     int arrayMaximalAdjacentDifference(int[] inputArray) {
         int diff = 0;
 

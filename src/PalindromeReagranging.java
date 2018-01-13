@@ -1,4 +1,4 @@
-public class palindromeReagranging {
+public class PalindromeReagranging {
     boolean palindromeRearranging(String inputString) {
         if (inputString.length() < 2)
             return true;

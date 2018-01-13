@@ -1,4 +1,4 @@
-public class arrayChange {
+public class ArrayChange {
     int arrayChange(int[] inputArray) {
         int counter = 0;
         for (int i = 0; i < inputArray.length-1; i++) {
