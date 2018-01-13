@@ -1,4 +1,5 @@
 public class IsIPv4Address {
+
     boolean isIPv4Address(String inputString) {
         if (inputString.charAt(0) == '.')
             return false;
@@ -20,4 +21,5 @@ public class IsIPv4Address {
 
         return true;
     }
+
 }

@@ -1,4 +1,5 @@
 public class ArrayMaximalAdjacentDifference {
+
     int arrayMaximalAdjacentDifference(int[] inputArray) {
         int diff = 0;
 
@@ -10,6 +11,6 @@ public class ArrayMaximalAdjacentDifference {
         }
 
         return diff;
-
     }
+
 }

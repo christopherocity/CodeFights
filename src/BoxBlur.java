@@ -16,8 +16,10 @@ public class BoxBlur {
                     numElements++;
                 }
             }
+
             int avg = sum / numElements;
             values.add(avg);
+
             if(jIndex+3 == image[0].length){
                 iIndex++;
                 jIndex = 0;
@@ -30,6 +32,7 @@ public class BoxBlur {
                 answer[i][j] = (int) values.remove();
             }
         }
+
         return answer;
     }
 
