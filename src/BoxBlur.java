@@ -1,14 +1,13 @@
 import java.util.ArrayDeque;
-
 public class BoxBlur {
-    private static int[][] boxBlur(int[][] image) {
+
+    int[][] boxBlur(int[][] image) {
         int[][] answer = new int[image.length-2][image[0].length-2];
         ArrayDeque values = new ArrayDeque();
-
         int jIndex = 0;
         int iIndex = 0;
 
-        while (iIndex < image.length-2 && jIndex < image[0].length-2) {
+        while (iIndex < image.length-2) {
             int sum = 0;
             int numElements = 0;
             for (int i = iIndex; i < iIndex+3; i++) {
@@ -22,10 +21,10 @@ public class BoxBlur {
             if(jIndex+3 == image[0].length){
                 iIndex++;
                 jIndex = 0;
-            } else {
+            } else
                 jIndex++;
-            }
         }
+
         for (int i = 0; i < answer.length; i++) {
             for (int j = 0; j < answer[i].length; j++) {
                 answer[i][j] = (int) values.remove();
@@ -33,4 +32,5 @@ public class BoxBlur {
         }
         return answer;
     }
+
 }
