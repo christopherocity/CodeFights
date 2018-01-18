@@ -3,7 +3,6 @@ public class MineSweeper {
     private static int[][] minesweeper(boolean[][] matrix) {
 
         int[][] map = new int[matrix.length][matrix[0].length];
-
         for (int i = 0; i < map.length; i++) {
             for (int j = 0; j < map[i].length; j++) {
                 if (matrix[i][j]) {
